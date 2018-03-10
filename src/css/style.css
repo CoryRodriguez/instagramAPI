@@ -1,3 +1,20 @@
+body, html {
+  height: 100%; }
+
+#home {
+  position: relative;
+  background: url("../img/tattoo1.jpeg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%; }
+  #home .cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); }
+
 .instaimg img {
   margin-bottom: 2rem; }
 
