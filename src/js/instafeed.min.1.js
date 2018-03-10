@@ -5,7 +5,7 @@
     function e(e, t) {
       var n, r;
       this.options = {
-        target: "instafeed",
+        target: "instafeed2",
         get: "popular",
         resolution: "thumbnail",
         sortBy: "none",
@@ -45,11 +45,11 @@
           typeof document != "undefined" &&
             document !== null &&
             ((i = document.createElement("script")),
-            (i.id = "instafeed-fetcher"),
+            (i.id = "instafeed2-fetcher"),
             (i.src = t || this._buildUrl()),
             (n = document.getElementsByTagName("head")),
             n[0].appendChild(i),
-            (r = "instafeedCache" + this.unique),
+            (r = "instafeed2Cache" + this.unique),
             (window[r] = new e(this.options, this)),
             (window[r].unique = this.unique)),
           !0
@@ -237,8 +237,8 @@
             new Error(o));
           _.appendChild(u),
             (a = document.getElementsByTagName("head")[0]),
-            a.removeChild(document.getElementById("instafeed-fetcher")),
-            (S = "instafeedCache" + this.unique),
+            a.removeChild(document.getElementById("instafeed2-fetcher")),
+            (S = "instafeed2Cache" + this.unique),
             (window[S] = void 0);
           try {
             delete window[S];
@@ -290,7 +290,7 @@
             ? (n += "?access_token=" + this.options.accessToken)
             : (n += "?client_id=" + this.options.clientId),
           this.options.limit != null && (n += "&count=" + this.options.limit),
-          (n += "&callback=instafeedCache" + this.unique + ".parse"),
+          (n += "&callback=instafeed2Cache" + this.unique + ".parse"),
           n
         );
       }),
@@ -358,7 +358,7 @@
         ? define([], t)
         : typeof module == "object" && module.exports
           ? (module.exports = t())
-          : (e.Instafeed = t());
+          : (e.Instafeed2 = t());
     })(this, function() {
       return e;
     });
