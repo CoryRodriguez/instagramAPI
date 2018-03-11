@@ -1,12 +1,17 @@
-// POPULAR
+//POPULAR;
 var popularFeed = new Instafeed({
   get: "user",
-  userId: "291620298",
-  //userId: "187893483",
+  // Cory User
+  // userId: "291620298",
+  // Nathan User
+  userId: "187893483",
   clientId: "abbb3e57a4bd4046a18aa5fac34b4699",
   limit: 12,
   resolution: "standard_resolution",
+  // Old Access
   accessToken: "291620298.1677ed0.d40e37107a6b4e23b8f21aae39cf09f7",
+  // New Access
+  accessToken: "291620298.abbb3e5.c314c1bb0c334abaa782fbc464c9a5b6",
   sortBy: "most-liked",
   template: `<div class="col-md-3 instaimg">
               <a href="{{image}}" title="{{caption}}" target="_blank">
