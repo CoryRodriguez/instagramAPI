@@ -9,7 +9,7 @@ var popularFeed = new Instafeed({
   limit: 12,
   resolution: "standard_resolution",
   // Old Access
-  accessToken: "291620298.1677ed0.d40e37107a6b4e23b8f21aae39cf09f7",
+  // accessToken: "291620298.1677ed0.d40e37107a6b4e23b8f21aae39cf09f7",
   // New Access
   accessToken: "291620298.abbb3e5.c314c1bb0c334abaa782fbc464c9a5b6",
   sortBy: "most-liked",
