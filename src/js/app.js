@@ -5,15 +5,16 @@ var popularFeed = new Instafeed({
   // userId: "291620298",
   // Nathan User
   userId: "187893483",
-  clientId: "abbb3e57a4bd4046a18aa5fac34b4699",
+  //clientId: "abbb3e57a4bd4046a18aa5fac34b4699",
+  clientId: "a8662e1269904ed8a840e977b03de83f",
   limit: 12,
   resolution: "standard_resolution",
   // Old Access
   // accessToken: "291620298.1677ed0.d40e37107a6b4e23b8f21aae39cf09f7",
   // New Access
-  accessToken: "291620298.abbb3e5.c314c1bb0c334abaa782fbc464c9a5b6",
+  accessToken: "187893483.1677ed0.b995334459bf4a48bf15d08de8cf264f",
   sortBy: "most-liked",
-  template: `<div class="col-md-3 instaimg">
+  template: `<div class="col-md-3 col-sm-6 instaimg">
               <a href="{{image}}" title="{{caption}}" target="_blank">
                 <img src="{{image}}" alt="{{caption}}" class="img-fluid"/>
               </a>
